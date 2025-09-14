@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #Rock{
+            background-color: aqua;
+            border-radius: 2em;
+            text-align: center;
+             font-weight:bold ;
+             margin: 1em;
+             padding: 1.5em;
+
+        }
+        #Paper{
+                 background-color: aqua;
+            border-radius: 2em;
+            text-align: center;
+             font-weight:bold ;
+                          margin: 1em;
+                         padding: 1.5em;
+
+        }
+        #Scissors{
+                  background-color: aqua;
+            border-radius: 2em;
+            text-align: center;
+             font-weight:bold ;
+                          margin: 1em;
+                         padding: 1.5em;
+
+        }
+        #gun{
+            text-align: center;
+     font-size: 1.5em;
+     background-color: chartreuse;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="gun">Rock👊 Paper✋ Scissors✌</p>
+    <button id="Rock" onclick="halwa()">Rock👊</button>
+    <button id="Paper" onclick="dairy()">Paper✋ </button>
+    <button id="Scissors" onclick="mouse()">Scissors✌</button>
+    <p id="tc"></p>
+    
+    <script>
+        function halwa(){
+      
+        let result =''
+        let cmove = Math.random()
+        if(cmove>=0&&cmove<=1/3){
+            result = 'Rock'}
+            if(cmove>1/3&&cmove<=2/3){
+            result = "Paper"}
+             if(cmove>2/3&&cmove<=1){
+            result = "Scissors"}
+          
+if(result==='Rock'){
+    document.querySelector('#tc').innerHTML='You chose rock , computer chose rock, TIE 😁'
+        }else if(result==='Paper'){
+          document.querySelector('#tc').innerHTML='You chose rock , computer chose Paper, You lose🤣 '
+        }else if(result==='Scissors'){
+                      document.querySelector('#tc').innerHTML='You chose rock , computer chose Scissors, You Win😒👌 '
+
+        } 
+
+    }
+    function dairy(){
+        let result =''
+        let cmove = Math.random()
+        if(cmove>=0&&cmove<=1/3){
+            result = 'Rock'}
+            if(cmove>1/3&&cmove<=2/3){
+            result = "Paper"}
+             if(cmove>2/3&&cmove<=1){
+            result = "Scissors"}
+          
+if(result==='Rock'){
+    document.querySelector('#tc').innerHTML='You chose Paper , computer chose rock, You Win😒👌'
+        }else if(result==='Paper'){
+          document.querySelector('#tc').innerHTML='You chose Paper , computer chose Paper, TIE 😁 '
+        }else if(result==='Scissors'){
+                      document.querySelector('#tc').innerHTML='You chose Paper , computer chose Scissors,You lose🤣 '
+
+        } 
+    }
+    function mouse(){
+        let result =''
+        let cmove = Math.random()
+        if(cmove>=0&&cmove<=1/3){
+            result = 'Rock'}
+            if(cmove>1/3&&cmove<=2/3){
+            result = "Paper"}
+             if(cmove>2/3&&cmove<=1){
+            result = "Scissors"}
+          
+if(result==='Rock'){
+    document.querySelector('#tc').innerHTML='You chose Scissor , computer chose rock, You lose🤣'
+        }else if(result==='Paper'){
+          document.querySelector('#tc').innerHTML='You chose Scissor , computer chose Paper,You Win😒👌 '
+        }else if(result==='Scissors'){
+                      document.querySelector('#tc').innerHTML='You chose Scissor , computer chose Scissors, TIE 😁 '
+
+        } 
+
+    }
+
+
+
+
+
+        
+       
+    </script>
+</body>
+</html>
